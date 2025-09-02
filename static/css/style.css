@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+nav {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-container ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-container ul li {
+    margin-left: 2rem;
+}
+
+.nav-container ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-container ul li a:hover {
+    color: #3498db;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 20px;
+    min-height: calc(100vh - 140px);
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section h1 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #34495e;
+    margin: 2rem 0 1rem;
+}
+
+.about-section p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-container ul {
+        gap: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
